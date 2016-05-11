@@ -13,7 +13,6 @@
         <engine name="cordova-ios" version=">=3.0.0" />
     </engines>
 
-    <dependency id="cordova-plugin-device"/>
 
     <js-module src="www/phonertc.js" name="PhoneRTC">
     </js-module>
