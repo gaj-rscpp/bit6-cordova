@@ -276,6 +276,9 @@ public class PhoneRTCPlugin extends CordovaPlugin {
 	        return null;
 	    }
 
+		if (webView instanceof WebView ) {
+ -	        _webView = (WebView) webView;
+		}else{
 	    	        java.lang.reflect.Method method = null;
 
 	        try {
@@ -291,7 +294,7 @@ public class PhoneRTCPlugin extends CordovaPlugin {
 	        } catch (Exception e) {
 	            Log.e("PRTC", "getView method invocation failed: " + e.getMessage());
 	        }
-	    
+		}
 	    return _webView;
 	}
 
