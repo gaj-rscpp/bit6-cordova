@@ -276,8 +276,8 @@ public class PhoneRTCPlugin extends CordovaPlugin {
 	        return null;
 	    }
 
-	    if (webView instanceof WebView ) {
-	        _webView = (WebView) webView;
+	    if (CordovaWebView instanceof WebView ) {
+	        _webView = (WebView) CordovaWebView;
 	    }
 	    else { //(>=4.0.0), using getView method
 	        java.lang.reflect.Method method = null;
